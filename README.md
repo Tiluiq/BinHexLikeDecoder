@@ -22,7 +22,7 @@ BinHex形式っぽいテキストを左のテキストボックスに入力す�
 * 別に1行が64文字でなくてもよい
 というように雑に処理しているのでRFC1741のAppendix Aに多少反していても変換するのでBinHex形式"っぽい"としています。
 
-BinHex形式で使える以下の文字以外が1行目の(This file must be converted with BinHex 4.0)以外の場所にあると00を出すようにしているため誤りがないか確認してみてください。
+BinHex形式で使える以下の文字以外が1行目の"(This file must be converted with BinHex 4.0)"以外の場所にあると00を出すようにしているため誤りがないか確認してみてください。
 * !"#$%&'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr
 
 データ部分("(This file must be converted with BinHex 4.0)"と":"及び改行以外)の文字数が4の倍数でない場合には、余りの部分に対応する部分は出力されないのでご注意ください。
