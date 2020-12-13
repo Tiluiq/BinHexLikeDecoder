@@ -1,5 +1,5 @@
 # BinHexLikeDecoder
-BinHex形式っぽいテキストをバイト列に直すやつ
+BinHex形式っぽいテキストをバイト列(を表すテキスト)に直すやつ
 
 ## 使い方
 BinHex形式っぽいテキストを左のテキストボックスに入力すると、変換後のテキストが真ん中に、それをASCIIで表したものが右に表示されます。<br>
@@ -20,9 +20,10 @@ BinHex形式っぽいテキストを左のテキストボックスに入力す�
 * 2行目以降に"(This file must be converted with BinHex 4.0)"があってもそれ以前を無視とかせずエラーにしてしまう
 * データ部分の前後に:がついていてもいなくても、どちらか一方だけでも良い
 * 別に1行が64文字でなくてもよい
+
 というように雑に処理しているのでRFC1741のAppendix Aに多少反していても変換するのでBinHex形式"っぽい"としています。
 
-BinHex形式で使える以下の文字以外が1行目の"(This file must be converted with BinHex 4.0)"とデータ部分前後の":"以外の場所にあると00を出すようにしているため誤りがないか確認してみてください。
+BinHex形式で使える以下の文字以外が1行目の"(This file must be converted with BinHex 4.0)"とデータ部分前後の":"以外の場所にあると00を出すようにしているため、その場合は誤りがないか確認してみてください。
 * !"#$%&'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr
 
 データ部分("(This file must be converted with BinHex 4.0)"とデータ部分前後の":"及び改行以外)の文字数が4の倍数でない場合には、余りの部分に対応する部分は出力されないのでご注意ください。
