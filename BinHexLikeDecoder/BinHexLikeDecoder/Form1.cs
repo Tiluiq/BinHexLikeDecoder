@@ -52,9 +52,9 @@ namespace BinHexLikeDecoder
                 }
 
                 //何故かシフト演算使ってなかった時の
-                bytes[0] = (byte)(indices[0] * 4 + indices[1] / 16);
-                bytes[1] = (byte)(indices[1] % 16 * 16 + indices[2] / 4);
-                bytes[2] = (byte)(indices[2] % 4 * 64 + indices[3]);
+                //bytes[0] = (byte)(indices[0] * 4 + indices[1] / 16);
+                //bytes[1] = (byte)(indices[1] % 16 * 16 + indices[2] / 4);
+                //bytes[2] = (byte)(indices[2] % 4 * 64 + indices[3]);
 
                 bytes[0] = (byte)((indices[0] << 2) + (indices[1] >> 4));
                 bytes[1] = (byte)(((indices[1] & 0x0F) << 4) + (indices[2] >> 2));

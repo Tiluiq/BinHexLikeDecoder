@@ -79,6 +79,7 @@ namespace BinHexLikeDecoder
             // 
             this.BinHexTextBox.Font = new System.Drawing.Font("ＭＳ ゴシック", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BinHexTextBox.Location = new System.Drawing.Point(12, 29);
+            this.BinHexTextBox.MaxLength = 0;
             this.BinHexTextBox.Multiline = true;
             this.BinHexTextBox.Name = "BinHexTextBox";
             this.BinHexTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
